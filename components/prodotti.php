@@ -43,3 +43,91 @@
             <input class="button" type="submit" value="acquista"> 
         </form>
 </div>
+
+
+<div class="container">
+
+        <img src="" />
+        <form action="components/prodotto.php">
+            <h1>Nome a caso</h1>
+            </a>
+            <h2>
+                Una piccola descrizione che spiega che cos'è il prodotto
+            </h2>
+            <h1>
+                350€
+            </h1>
+            <h2>
+                Rating:
+                <span>3.4 ★</span>
+            </h2>
+            <input type="hidden" value="2" name="ID_prod" />
+            <input class="button" type="submit" value="acquista"> 
+        </form>
+</div>
+
+
+<div class="container">
+
+        <img src="" />
+        <form action="components/prodotto.php">
+            <h1>Nome a caso</h1>
+            </a>
+            <h2>
+                Una piccola descrizione che spiega che cos'è il prodotto
+            </h2>
+            <h1>
+                350€
+            </h1>
+            <h2>
+                Rating:
+                <span>3.4 ★</span>
+            </h2>
+            <input type="hidden" value="2" name="ID_prod" />
+            <input class="button" type="submit" value="acquista"> 
+        </form>
+</div>
+
+
+<div class="container">
+
+        <img src="" />
+        <form action="components/prodotto.php">
+            <h1>Nome a caso</h1>
+            </a>
+            <h2>
+                Una piccola descrizione che spiega che cos'è il prodotto
+            </h2>
+            <h1>
+                350€
+            </h1>
+            <h2>
+                Rating:
+                <span>3.4 ★</span>
+            </h2>
+            <input type="hidden" value="2" name="ID_prod" />
+            <input class="button" type="submit" value="acquista"> 
+        </form>
+</div>
+
+
+<div class="container">
+
+        <img src="" />
+        <form action="components/prodotto.php">
+            <h1>Nome a caso</h1>
+            </a>
+            <h2>
+                Una piccola descrizione che spiega che cos'è il prodotto
+            </h2>
+            <h1>
+                350€
+            </h1>
+            <h2>
+                Rating:
+                <span>3.4 ★</span>
+            </h2>
+            <input type="hidden" value="2" name="ID_prod" />
+            <input class="button" type="submit" value="acquista"> 
+        </form>
+</div>
