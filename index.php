@@ -2,7 +2,6 @@
 <html>
 <head>
     <?php
-        $conn = new mysqli("localhost","root","","negozio");
         include "components/head.php";
     ?>
 </head>
@@ -10,6 +9,7 @@
     <?php 
         include "components/header.php";
         include "components/prodotti.php";
+        include "components/footer.php";
     ?>
 </body>
 </html>

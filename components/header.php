@@ -32,18 +32,16 @@
 <header>
 
     <center>
-    <a href="index.php">
+    <a href="http://localhost:8889/ecommerce">
         <h1>
             Super e-Commerce
         </h1>
     </a>
     </center>
     <div class="topnav">
-        <a class="active" href="index.php">Home</a>
+        <a class="active" href="http://localhost:8889/ecommerce">Home</a>
         <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-        <a href="login.php?login=true">Login</a>
-        <a href="login.php?login=false">Register</a>
+        <a href="http://localhost:8889/ecommerce/login.php?login=true">Login</a>
+        <a href="http://localhost:8889/ecommerce/login.php?login=false">Register</a>
     </div>
 </header>
