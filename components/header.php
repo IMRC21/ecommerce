@@ -8,27 +8,28 @@
     }
 
     .topnav {
-    background-color: #333;
-    overflow: hidden;
+        background-color: #333;
+        overflow: hidden;
     }
 
     #header{
         display: flex;
         width: 100%;
-        flex-direction: row;
-        justify-content: center; 
+        justify-content: space-between;
+        flex-direction: row
     }
-    #header a{
+    #header a h1{
         
     }
 
-    #header h1{
-        
+    #blocco-sin{
     }
-
     #blocco-destra{
-        align-self: flex-start;
-        
+        padding-top: 1%;
+    }
+
+    .blocco{
+        width: 200px;
     }
 
     .topnav a {
@@ -50,13 +51,16 @@
 </style>
 <header>
     <div id="header">
+        <div id="blocco-sin" class="blocco">
+            
+        </div>
         <a href="http://localhost:8889/ecommerce">
             <h1>
                 Super e-Commerce
             </h1>
         </a>
-        <div id="blocco-destra">
-            esempio AIUSBdifbsauidfbiuobfiue
+        <div id="blocco-destra" class="blocco">
+            Bentornato, Nomeutente
         </div>
     </div>
     <div class="topnav">
