@@ -5,10 +5,10 @@
     .separate{
         display: block; 
         margin-top: 2%;
-        font-family: 'VT323', monospace;
+        //font-family: 'VT323', monospace;
     }
     .separate label{
-        font-size: 40px;
+        font-size: 20px;
     }
     #child{
         border: solid black 5px;
@@ -18,7 +18,7 @@
     }
 </style>
 
-<?php 
+<?php   
     include "components/head.php";
     include "components/header.php";
     $riceviRichiesta = $_GET["login"];
@@ -36,7 +36,9 @@
                         <label>PASSWORD:</label>
                         <input type="password" name="psw" />
                     </div>
-                    <input type="submit" /> 
+                    <div class="separate">
+                        <input type="submit" />
+                    </div>
                 </form>
             </center>';
     }else{
@@ -53,6 +55,15 @@
                 <div class="separate">
                     <label>PASSWORD:</label>
                     <input type="password" name="psw" />
+                </div>
+                
+                <div class="separate">
+                    <label>Nome:</label>
+                    <input type="text" name="nome" />
+                </div>
+                <div class="separate">
+                    <label>Cognome:</label>
+                    <input type="text" name="cognome" />
                 </div>
                 <div class="separate">
                 <input type="submit" />

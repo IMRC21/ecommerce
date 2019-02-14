@@ -3,13 +3,32 @@
         color: black;
         text-decoration: none;
     }
-    h1{
+    a h1{
         font-family: 'Lobster', cursive;
     }
 
     .topnav {
     background-color: #333;
     overflow: hidden;
+    }
+
+    #header{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center; 
+    }
+    #header a{
+        
+    }
+
+    #header h1{
+        
+    }
+
+    #blocco-destra{
+        align-self: flex-start;
+        
     }
 
     .topnav a {
@@ -30,14 +49,16 @@
     }
 </style>
 <header>
-
-    <center>
-    <a href="http://localhost:8889/ecommerce">
-        <h1>
-            Super e-Commerce
-        </h1>
-    </a>
-    </center>
+    <div id="header">
+        <a href="http://localhost:8889/ecommerce">
+            <h1>
+                Super e-Commerce
+            </h1>
+        </a>
+        <div id="blocco-destra">
+            esempio AIUSBdifbsauidfbiuobfiue
+        </div>
+    </div>
     <div class="topnav">
         <a class="active" href="http://localhost:8889/ecommerce">Home</a>
         <a href="#news">News</a>
