@@ -1,11 +1,17 @@
 <style>
     .container{
-        margin: 3%;
+        margin: 1%;
         display: inline-block;
-        width: 300px;
+ 
         border: 2px solid black;
         padding: 20px;
     }
+    @media only screen and (min-width: 1000px) {
+        .container{
+            width: 19%;
+        }
+    }
+
     .container h2{
         font-family: arial;
     }

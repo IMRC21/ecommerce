@@ -24,23 +24,28 @@
     $riceviRichiesta = $_GET["login"];
     if($riceviRichiesta == "true"){
         echo '<center>
-                <form id="child">
+                <form id="child" action="components/check.php" method="POST">
                     <h1>
                         Login
                     </h1>
                     <div class="separate">
-                        <label>USERNAME:</label>
+                        <label>Username:</label>
                         <input type="text" name="usr" />
                     </div>
                     <div class="separate">
-                        <label>PASSWORD:</label>
+                        <label>Password:</label>
                         <input type="password" name="psw" />
+                    </div>
+                    <div class="separate">
+                        <label for="remember"> remember me </label>
+                        <input type="checkbox" name="remember" /> 
                     </div>
                     <div class="separate">
                         <input type="submit" />
                     </div>
                 </form>
-            </center>';
+            </center>'
+            ;
     }else{
         echo '        
             <center>
@@ -56,6 +61,10 @@
                     <label>PASSWORD:</label>
                     <input type="password" name="psw" />
                 </div>
+                <div class="separate">
+                    <label>Ripeti la password:</label>
+                    <input type="password" name="pswChk" />
+                </div>
                 
                 <div class="separate">
                     <label>Nome:</label>
@@ -66,8 +75,13 @@
                     <input type="text" name="cognome" />
                 </div>
                 <div class="separate">
+                    <label>Nazione:</label>
+                    <input type="text" name="nazione" />
+                </div>
+                <div class="separate">
                 <input type="submit" />
                 </div>
+                
             </form>
             </center>';
     }

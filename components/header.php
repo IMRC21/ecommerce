@@ -18,12 +18,12 @@
         justify-content: space-between;
         flex-direction: row
     }
-    #header a h1{
-        
+    
+    .tasti{
+        margin: 3px;
+        border: 1px solid black;
     }
 
-    #blocco-sin{
-    }
     #blocco-destra{
         padding-top: 1%;
     }
@@ -48,6 +48,14 @@
     #login{
         float: right;
     }
+    @media only screen and (max-width: 600px) {
+        #blocco-sin{
+            display: none;
+        }
+        #header a h1{
+            margin-left: 3%;
+        }
+    }
 </style>
 <header>
     <div id="header">
@@ -60,13 +68,19 @@
             </h1>
         </a>
         <div id="blocco-destra" class="blocco">
-            Bentornato, Nomeutente
+            <p>
+                Bentornato, Nomeutente
+            </p>
+            <a class="tasti" href="http://localhost:8889/ecommerce/login.php?login=true">
+                Login
+            </a>
+            <a class="tasti" href="http://localhost:8889/ecommerce/login.php?login=false">
+                Register
+            </a>
         </div>
     </div>
     <div class="topnav">
         <a class="active" href="http://localhost:8889/ecommerce">Home</a>
         <a href="#news">News</a>
-        <a href="http://localhost:8889/ecommerce/login.php?login=true">Login</a>
-        <a href="http://localhost:8889/ecommerce/login.php?login=false">Register</a>
     </div>
 </header>
