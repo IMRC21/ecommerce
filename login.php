@@ -54,7 +54,7 @@
                     Register
                 </h1>
                 <div class="separate">
-                    <label>USERNAME:</label>
+                    <label>Username:</label>
                     <input type="text" name="usr" />
                 </div>
                 <div class="separate">

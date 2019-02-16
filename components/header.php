@@ -73,7 +73,7 @@
                 if(isset($_SESSION["id_u"])){
             ?>
                 <p>
-                    Bentornato, Nomeutente
+                    Bentornato, <?php echo $_SESSION["nome"] ?>
                 </p>
             <?php
                 }else{
