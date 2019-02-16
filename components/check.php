@@ -14,11 +14,11 @@
             $_SESSION["nome"] = $r["nome"];
             $_SESSION["cognome"] = $r["cognome"];
             $_SESSION["nazione"] = $r["nazione"];
-
+            $_SESSION["username"] = $r["username"];
             echo "<center><h1 style='font-family: arial'>Login eseguito correttamente</h1></center>";
             echo $_SESSION["id_u"];
         }
     }
+    mysql_close();
     header('Location: http://localhost:8889/ecommerce');
-
 ?>

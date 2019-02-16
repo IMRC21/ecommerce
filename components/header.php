@@ -72,9 +72,9 @@
             <?php
                 if(isset($_SESSION["id_u"])){
             ?>
-                <p>
+                <a href="http://localhost:8889/ecommerce/profilo.php">
                     Bentornato, <?php echo $_SESSION["nome"] ?>
-                </p>
+                </a>
             <?php
                 }else{
             ?>

@@ -13,4 +13,5 @@
     $sql = "INSERT INTO user(nome, cognome, username, password, nazione) VALUES('$nome','$cognome','$usr','$pswC','$nazione');";
     $result = mysql_query($sql) or die(mysql_error());
     mysql_close();
+    header('Location: http://localhost:8889/ecommerce/login.php?login=true');
 ?>
