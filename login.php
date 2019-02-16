@@ -5,7 +5,7 @@
     .separate{
         display: block; 
         margin-top: 2%;
-        //font-family: 'VT323', monospace;
+        /*font-family: 'VT323', monospace;*/
     }
     .separate label{
         font-size: 20px;

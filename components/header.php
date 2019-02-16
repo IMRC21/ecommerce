@@ -1,3 +1,4 @@
+
 <style>
     a{
         color: black;
@@ -68,19 +69,28 @@
             </h1>
         </a>
         <div id="blocco-destra" class="blocco">
-            <p>
-                Bentornato, Nomeutente
-            </p>
-            <a class="tasti" href="http://localhost:8889/ecommerce/login.php?login=true">
-                Login
-            </a>
-            <a class="tasti" href="http://localhost:8889/ecommerce/login.php?login=false">
-                Register
-            </a>
+            <?php
+                if(isset($_SESSION["id_u"])){
+            ?>
+                <p>
+                    Bentornato, Nomeutente
+                </p>
+            <?php
+                }else{
+            ?>
+                <a class="tasti" href="http://localhost:8889/ecommerce/login.php?login=true">
+                    Login
+                </a>
+                <a class="tasti" href="http://localhost:8889/ecommerce/login.php?login=false">
+                    Register
+                </a>
+            <?php
+                }
+            ?>
         </div>
     </div>
     <div class="topnav">
         <a class="active" href="http://localhost:8889/ecommerce">Home</a>
-        <a href="#news">News</a>
+        <a href="http://localhost:8889/ecommerce/news.php">News</a>
     </div>
 </header>
