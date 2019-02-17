@@ -10,7 +10,8 @@
     echo "  Lunghezza: ". strlen($pswC);
     mysql_connect('localhost', 'root', '') or die(mysql_error());
     mysql_select_db("negozio") or die(mysql_error());
-    $sql = "INSERT INTO user(nome, cognome, username, password, nazione) VALUES('$nome','$cognome','$usr','$pswC','$nazione');";
+    $sql = "INSERT INTO user(nome, cognome, username, password, nazione, registrazione, last_login) 
+            VALUES('$nome','$cognome','$usr','$pswC','$nazione', CURDATE(), CURDATE());";
     $result = mysql_query($sql) or die(mysql_error());
     mysql_close();
     header('Location: http://localhost:8889/ecommerce/login.php?login=true');

@@ -15,10 +15,15 @@
             $_SESSION["cognome"] = $r["cognome"];
             $_SESSION["nazione"] = $r["nazione"];
             $_SESSION["username"] = $r["username"];
+            $_SESSION["last_login"] = $r["last_login"];
+            $_SESSION["registrazione"] = $r["registrazione"];
             echo "<center><h1 style='font-family: arial'>Login eseguito correttamente</h1></center>";
             echo $_SESSION["id_u"];
+            $sql = "UPDATE user SET last_login=CURDATE() WHERE ID_utente=" . $_SESSION["id_u"] . ";";
+            mysql_query($sql) or die(mysql_error());
         }
     }
+    
     mysql_close();
     header('Location: http://localhost:8889/ecommerce');
 ?>
