@@ -49,6 +49,7 @@
     }else{
         echo '        
             <center>
+            <script src="js/controllo.js"></script>
             <form id="child" action="components/invia.php" method="POST">
                 <h1>
                     Register
