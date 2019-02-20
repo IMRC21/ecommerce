@@ -10,11 +10,17 @@
     .separate label{
         font-size: 20px;
     }
+    #parent{
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     #child{
         border: solid black 5px;
         max-height: 500px;
         max-width: 500px;
-        margin-top: 10%;
+
     }
 </style>
 
@@ -22,15 +28,17 @@
     include "components/head.php";
     include "components/header.php";
     $riceviRichiesta = $_GET["login"];
+    echo '<script src="controllo.js"></script>';
     if($riceviRichiesta == "true"){
-        echo '<center>
-                <form id="child" action="components/check.php" method="POST">
+        echo '
+            <div id="parent">
+                <form id="child" onsubmit="return controllo()" action="components/check.php" method="POST">
                     <h1>
                         Login
                     </h1>
                     <div class="separate">
                         <label>Username:</label>
-                        <input type="text" name="usr" />
+                        <input type="text" name="usr" i/>
                     </div>
                     <div class="separate">
                         <label>Password:</label>
@@ -44,11 +52,12 @@
                         <input type="submit" />
                     </div>
                 </form>
-            </center>'
+            </div>
+            '
             ;
     }else{
         echo '        
-            <center>
+        <div id="parent">
             <script src="js/controllo.js"></script>
             <form id="child" action="components/invia.php" method="POST">
                 <h1>
@@ -84,8 +93,8 @@
                 </div>
                 
             </form>
-            
-            </center>';
+        </div>
+            ';
     }
 ?>
 

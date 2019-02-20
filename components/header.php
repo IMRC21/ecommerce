@@ -1,4 +1,3 @@
-
 <style>
     a{
         color: black;
@@ -74,6 +73,10 @@
             ?>
                 <a href="http://localhost:8889/ecommerce/profilo.php">
                     Bentornato, <?php echo $_SESSION["nome"] ?>
+                </a>
+                <br>
+                <a href="http://localhost:8889/ecommerce/components/esci.php">
+                    Esci
                 </a>
             <?php
                 }else{

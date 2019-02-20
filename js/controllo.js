@@ -1,1 +1,5 @@
-console.log("DIOOOO");
+function controllo(){
+    var usr = Document.getElementsByName("usr");
+    console.log(usr);
+    return true;
+}
