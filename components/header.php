@@ -5,10 +5,11 @@
     }
     a h1{
         font-family: 'Lobster', cursive;
+        
     }
 
     .topnav {
-        background-color: #333;
+        background-color: #08566d;
         overflow: hidden;
     }
 
@@ -16,16 +17,22 @@
         display: flex;
         width: 100%;
         justify-content: space-between;
-        flex-direction: row
+        flex-direction: row;
+        background-color: white;
     }
     
     .tasti{
         margin: 3px;
-        border: 1px solid black;
+        padding: 3%;
+        color: white;
+        background-color: #08566d;
+        align-self: center;
+        width: 100%;
     }
 
     #blocco-destra{
         padding-top: 1%;
+        display: flex;
     }
 
     .blocco{

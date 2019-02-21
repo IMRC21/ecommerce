@@ -21,9 +21,13 @@
             echo $_SESSION["id_u"];
             $sql = "UPDATE user SET last_login=CURDATE() WHERE ID_utente=" . $_SESSION["id_u"] . ";";
             mysql_query($sql) or die(mysql_error());
+            mysql_close();
+            header('Location: http://localhost:8889/ecommerce');
+        }
+        else{
+            header('Location: http://localhost:8889/ecommerce/login.php?sbagliato=true');
         }
     }
     
-    mysql_close();
-    header('Location: http://localhost:8889/ecommerce');
+   
 ?>
