@@ -22,10 +22,10 @@
             $sql = "UPDATE user SET last_login=CURDATE() WHERE ID_utente=" . $_SESSION["id_u"] . ";";
             mysql_query($sql) or die(mysql_error());
             mysql_close();
-            header('Location: http://localhost:8889/ecommerce');
+            header('Location: ' . $_SERVER["PHP_SELF"] . '/ecommerce');
         }
         else{
-            header('Location: http://localhost:8889/ecommerce/login.php?sbagliato=true');
+            header('Location: ' . $_SERVER["PHP_SELF"] . '/ecommerce/login.php?sbagliato=true');
         }
     }
     

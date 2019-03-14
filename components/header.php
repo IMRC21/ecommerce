@@ -69,7 +69,7 @@
         <div id="blocco-sin" class="blocco">
             
         </div>
-        <a href="http://localhost:8889/ecommerce">
+        <a href="<?php  echo $_SERVER["PHP_SELF"]   ?>/ecommerce">
             <h1>
                 Super e-Commerce
             </h1>
@@ -78,20 +78,20 @@
             <?php
                 if(isset($_SESSION["id_u"])){
             ?>
-                <a href="http://localhost:8889/ecommerce/profilo.php">
+                <a href="<?php  echo $_SERVER["PHP_SELF"]   ?>/ecommerce/profilo.php">
                     Bentornato, <?php echo $_SESSION["nome"] ?>
                 </a>
                 <br>
-                <a href="http://localhost:8889/ecommerce/components/esci.php">
+                <a href="<?php  echo $_SERVER["PHP_SELF"]   ?>/ecommerce/components/esci.php">
                     Esci
                 </a>
             <?php
                 }else{
             ?>
-                <a class="tasti" href="http://localhost:8889/ecommerce/login.php?login=true">
+                <a class="tasti" href="<?php  echo $_SERVER["PHP_SELF"]   ?>/ecommerce/login.php?login=true">
                     Login
                 </a>
-                <a class="tasti" href="http://localhost:8889/ecommerce/login.php?login=false">
+                <a class="tasti" href="<?php  echo $_SERVER["PHP_SELF"]   ?>/ecommerce/login.php?login=false">
                     Register
                 </a>
             <?php
@@ -100,7 +100,9 @@
         </div>
     </div>
     <div class="topnav">
-        <a class="active" href="http://localhost:8889/ecommerce">Home</a>
-        <a href="http://localhost:8889/ecommerce/news.php">News</a>
+        <a class="active" href="<?php  echo $_SERVER["PHP_SELF"]   ?>/ecommerce">Home</a>
+        <a href="<?php  echo $_SERVER["PHP_SELF"]   ?>/ecommerce/news.php">News</a>
     </div>
 </header>
+
+
