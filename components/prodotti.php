@@ -43,7 +43,7 @@
 <div class="container">
 
         <img src="" />
-        <form action="index.php" method="GET" >
+        <form action="index.php" >
             <h1>Nome a caso</h1>
             </a>
             <h2>
@@ -56,8 +56,8 @@
                 Rating:
                 <span>3.4 ★</span>
             </h2>
-            <input type="hidden" value="5" name="ID_prod" />
-            <input class="button" type="submit" value="acquista"> 
+            <a class="button" href="index.php?ID_prod=1">Aggiungi al carrello</a>
+            <a class="button" href="http://localhost:8889/components/prodotto.php"> Acquista </a>
         </form>
 </div>
 
