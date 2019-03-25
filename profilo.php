@@ -17,7 +17,7 @@
         </h1>
     </div>
 <?php }else{ 
-        header('Location: ' . $_SERVER["PHP-SELF"] . '/ecommerce/login.php?login=true');
+        header('Location: http://localhost:8889/ecommerce/login.php?login=true');
     }
     ?>
 
