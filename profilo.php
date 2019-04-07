@@ -17,7 +17,7 @@
         </h1>
     </div>
 <?php }else{ 
-        header('Location: http://localhost:8889/ecommerce/login.php?login=true');
+        header('Location: http://localhost/ecommerceecommerce/login.php?login=true');
     }
     ?>
 

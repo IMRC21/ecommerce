@@ -23,7 +23,6 @@
 </style>
 <?php
     if($_GET){
-        //echo "<script> alert('sei uno scemo')</script>";
         $shp = $_GET["ID_prod"] . ",";
         if(isset($_COOKIE["cart"])){
             $shp = $_COOKIE["cart"] . $shp;
@@ -57,7 +56,7 @@
                 <span>3.4 ★</span>
             </h2>
             <a class="button" href="index.php?ID_prod=1">Aggiungi al carrello</a>
-            <a class="button" href="http://localhost:8889/components/prodotto.php"> Acquista </a>
+            <a class="button" href="http://localhost/ecommercecomponents/prodotto.php"> Acquista </a>
         </form>
 </div>
 
