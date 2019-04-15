@@ -36,8 +36,8 @@
     // while($row = mysql_fetch_array($r)or die(mysql_error())){
     //     echo $row["nome"];
     // }
-    unset($_GET);
-    echo $_COOKIE["cart"];
+    //unset($_GET);
+    //echo $_COOKIE["cart"];
 ?>
 
 <div class="container">
@@ -56,7 +56,7 @@
                 Rating:
                 <span>3.4 ★</span>
             </h2>
-            <a class="button" href="index.php?ID_prod=1">Aggiungi al carrello</a>
+            <a class="button" href="pdf.php?ID_prod=1">Aggiungi al carrello</a>
             <a class="button" href="http://localhost:8889/components/prodotto.php"> Acquista </a>
         </form>
 </div>

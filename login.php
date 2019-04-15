@@ -49,6 +49,16 @@
         color: white;
         width: 100%;
     }
+    #btn-s button{
+        background-color: #08566d;
+        color: white;
+        width: 100%;
+    }
+    #btn-s a{
+        background-color: #08566d;
+        color: white;
+        width: 100%;
+    }
     .verifica{
         color: red;
         display: none;
@@ -108,12 +118,17 @@
                             
                             <input type="password" id="psw" name="psw" placeholder="Password"/>
                         </div>
-                        <!-- <div class="separate">
-                            <label for="remember"> remember me </label>
+                        <div class="separate">
+                            <label for="remember">Ricordami</label>
                             <input type="checkbox" name="remember" /> 
-                        </div> -->
+                        </div>
                         <div class="separate" id="btn-s">
                             <input type="submit" />
+                            
+                            <button name="recupero">
+                                <a href="recupero.php">Password dimenticata</a>
+                            </button>
+                            
                         </div>
                     </form>
                 </div>
