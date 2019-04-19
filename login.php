@@ -147,6 +147,10 @@
                     <input type="text" id="usr" name="usr" placeholder="Username" />
                 </div>
                 <div class="separate">
+                    <label id="mailVuoto" class="verifica">Campo vuoto! </label>
+                    <input type="email" id="mail" name="mail" placeholder="E-mail" />
+                </div>
+                <div class="separate">
                     <label id="nonCombacia"class="verifica">Le password non combaciano</label>
                     <label id="pswVuota" class="verifica">Campo vuoto! </label>
                     <input type="password" id="psw" name="psw" placeholder="Password"/>
@@ -154,7 +158,6 @@
                 <div class="separate">
                     <input type="password" id="pswChk" name="pswChk" placeholder="Ripeti la password" />
                 </div>
-                
                 <div class="separate">
                     <label id="nomeVuoto" class="verifica">Campo vuoto! </label>
                     <input type="text" id="nome" name="nome" placeholder="Nome" />

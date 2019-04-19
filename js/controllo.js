@@ -4,9 +4,14 @@ function controllo(){
     let pswC = document.getElementById("pswChk");
     let nome = document.getElementById("nome");
     let cognome = document.getElementById("cognome");
+    let mail = document.getElementById("mail"); 
 
-    let vuotoU, vuotoP, vuotoN, vuotoC, pswNoncombacia;
+    let vuotoU, vuotoP, vuotoN, vuotoC, pswNoncombacia, vuotoM;
 
+    if(mail.value === ""){
+        document.getElementById("mailVuoto").setAttribute("class", "mostra");
+        vuotoM = true;
+    }
 
     if(usr.value === ""){
         document.getElementById("lv").setAttribute("class", "mostra");
