@@ -54,7 +54,7 @@
                     <span><b>Nome:</b> $nome </span>
                     <span><b>Cognome:</b> $cognome </span>
                     <span><b>Nazione:</b> $nazione </span>
-                    <span><b>mail:</b> $mailP </span>
+                    <span><b>e-Mail:</b> $mailP </span>
                 </div>
             </div>
         </div>
