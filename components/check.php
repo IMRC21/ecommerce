@@ -11,12 +11,14 @@
         echo "<br>";
         if(password_verify($psw, $r["password"])){
             $_SESSION["id_u"] = $r["ID_utente"];
+            $_SESSION["psw"] = $r["password"];
             $_SESSION["nome"] = $r["nome"];
             $_SESSION["cognome"] = $r["cognome"];
             $_SESSION["nazione"] = $r["nazione"];
             $_SESSION["username"] = $r["username"];
             $_SESSION["last_login"] = $r["last_login"];
             $_SESSION["registrazione"] = $r["registrazione"];
+            $_SESSION["mail"] = $r["mail"];
             echo "<center><h1 style='font-family: arial'>Login eseguito correttamente</h1></center>";
             echo $_SESSION["id_u"];
             $sql = "UPDATE user SET last_login=CURDATE() WHERE ID_utente=" . $_SESSION["id_u"] . ";";

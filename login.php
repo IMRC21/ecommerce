@@ -71,7 +71,9 @@
 <?php   
     include "components/head.php";
     include "components/header.php";
-    $riceviRichiesta = $_GET["login"];
+    if(isset($_GET["login"])){
+        $riceviRichiesta = $_GET["login"];
+    }
     echo '<script src="controllo.js"></script>';
     echo '<body>';
     $err = false;
@@ -85,7 +87,7 @@
                         <h1>
                             Login
                         </h1>
-                            <label class=\"verifica\">La password e utente non corrispondono </label>   
+                            <label class="verifica">La password e utente non corrispondono </label>   
                             
                         <div class="separate">
                             <input type="text" id="usr" name="usr" placeholder="Username"/>

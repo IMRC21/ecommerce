@@ -78,11 +78,11 @@
             <?php
                 if(isset($_SESSION["id_u"])){
             ?>
-                <a href="http://localhost:8889/ecommerce/profilo.php">
+                <a  href="http://localhost:8889/ecommerce/profilo.php">
                     Bentornato, <?php echo $_SESSION["nome"] ?>
                 </a>
                 <br>
-                <a href="http://localhost:8889/ecommerce/components/esci.php">
+                <a class="tasti" href="http://localhost:8889/ecommerce/components/esci.php">
                     Esci
                 </a>
             <?php

@@ -45,3 +45,12 @@ function controllo(){
         return true;
     }
 }
+
+function controlloPsw(){
+    let psw = document.getElementById("psw");
+    let pswC = document.getElementById("pswChk");
+    if(psw.value != pswC.value){
+        document.getElementById("nonCombacia").setAttribute("class", "mostra");
+        return false
+    }else return true;
+}

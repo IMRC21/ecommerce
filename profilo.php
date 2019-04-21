@@ -15,6 +15,13 @@
             ti sei registrato il <?php echo $_SESSION["registrazione"]; ?><br>
             ed il tuo indirizzo IP è: <?php echo $ip ?>
         </h1>
+        <h1 style="border: 3px solid blacK; display: inline-block; padding: 1%;"><a href="<?php echo "http://localhost:8889/ecommerce/reset.php?key=" . $_SESSION["psw"] . "&id=" . $_SESSION["id_u"] ?>"> 
+            Cambia la password 
+        </a></h1>
+        <h1 style="border: 3px solid blacK; display: inline-block;padding: 1%;"><a href="components/downloadData.php"> 
+            Scarica i tuoi dati
+        </a></h1>
+        
     </div>
 <?php }else{ 
         header('Location: http://localhost:8889/ecommerce/login.php?login=true');

@@ -10,7 +10,7 @@
         echo "trovato " . $mailP;
         while($res = mysql_fetch_array($r)){
             $psw = $res["password"];
-            $id = $res["ID_utente"]
+            $id = $res["ID_utente"];
         }
         $mail = new SMTPmailer();
         $mail->addTo($mailP);
