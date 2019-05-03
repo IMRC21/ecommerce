@@ -2,7 +2,7 @@
     include "components/head.php";
     include "components/header.php";
     echo "
-    <script src='js/controllo.js'></script>';
+    <script src='js/controllo.js'></script>
     <style>
         #parent{
             height: 80%;

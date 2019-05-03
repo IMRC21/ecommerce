@@ -31,8 +31,15 @@
     }
 
     #blocco-destra{
-        padding-top: 1%;
         display: flex;
+    }
+
+    #bentornato{
+        border: 1px solid black;
+        margin: 3px;
+        padding: 3%;
+        align-self: center;
+        width: 100%;
     }
 
     .blocco{
@@ -78,7 +85,7 @@
             <?php
                 if(isset($_SESSION["id_u"])){
             ?>
-                <a  href="http://localhost:8889/ecommerce/profilo.php">
+                <a id="bentornato" href="http://localhost:8889/ecommerce/profilo.php">
                     Bentornato, <?php echo $_SESSION["nome"] ?>
                 </a>
                 <br>

@@ -18,7 +18,7 @@
         <h1 style="border: 3px solid blacK; display: inline-block; padding: 1%;"><a href="<?php echo "http://localhost:8889/ecommerce/reset.php?key=" . $_SESSION["psw"] . "&id=" . $_SESSION["id_u"] ?>"> 
             Cambia la password 
         </a></h1>
-        <h1 style="border: 3px solid blacK; display: inline-block;padding: 1%;"><a href="components/downloadData.php"> 
+        <h1 style="border: 3px solid blacK; display: inline-block;padding: 1%;"><a target="blank" href="components/downloadData.php"> 
             Scarica i tuoi dati
         </a></h1>
         
